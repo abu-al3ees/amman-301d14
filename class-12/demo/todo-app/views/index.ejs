@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('./layout/head.ejs') %>
+</head>
+
+<body>
+  <main>
+    <header>
+      <%- include('./layout/nav.ejs') %>
+    </header>
+    <section class="task-view container">
+      <!-- Display tasks here -->
+      <ul>
+        <% if (results.length) { %>
+          <% results.forEach(data=> { %>
+            <li>
+              <h4>
+                <%= data.title %>
+              </h4>
+              <p>
+                <%= data.contact %>
+              </p>
+              <p>
+                <%= data.status %>
+              </p>
+              <a href='/tasks/<%= data.id %>' target="_blank" rel="noopener noreferrer">View task details</a>
+            </li>
+            <% }); %>
+              <% } else { %>
+                <p>No data was found</p>
+                <% } %>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

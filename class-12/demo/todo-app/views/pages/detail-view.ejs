@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../layout/head.ejs') %>
+</head>
+
+<body>
+  <header>
+    <%- include('../layout/nav.ejs') %>
+  </header>
+
+  <main>
+    <section class="task-view container">
+      <h1>got to details view</h1>
+      <ul id="task-list">
+        <% result.forEach(task=> { %>
+          <h4>
+            Name: <%= task.title %>
+          </h4>
+          <h5>
+            <%= task.contact %>
+          </h5>
+          <span>
+            <%= task.status %>
+          </span>
+          <p>
+            <%= task.description %>
+          </p>
+          <p>
+            <%= task.category %>
+          </p>
+          <p>
+            <%= task.due %>
+          </p>
+          <% }) %>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
