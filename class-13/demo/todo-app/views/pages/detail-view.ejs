@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../layout/head.ejs') %>
+</head>
+
+<body>
+  <header>
+    <%- include('../layout/nav.ejs') %>
+  </header>
+
+  <main>
+    <section class="task-view container">
+      <h1>got to details view</h1>
+      <ul id="task-list">
+        <h4>
+          Name: <%= task.title %>
+        </h4>
+        <h5>
+          <%= task.contact %>
+        </h5>
+        <span>
+          <%= task.status %>
+        </span>
+        <p>
+          <%= task.description %>
+        </p>
+        <p>
+          <%= task.category %>
+        </p>
+        <p>
+          <%= task.due %>
+        </p>
+      </ul>
+      <form action="/task/delete/<%= task.id%>?_method=DELETE" method="POST">
+        <input type="hidden" value="<%= task.id %>">
+        <input type="submit" value="Delete task">
+      </form>
+      <form action="/task/update/<%=task.id%>?_method=PUT" method="POST">
+        <fieldset>
+          <legend>Update task</legend>
+          Task title
+          <input type="text" name="title" value="<%= task.title %>">
+          Task contact
+          <input type="text" name="contact" value="<%= task.contact %>">
+          Task status
+          <input type="text" name="status" value="<%= task.status %>">
+          Task description
+          <br>
+          <textarea cols="30" rows="10" name="description">
+            <%= task.description %>
+          </textarea>
+          <br>
+          Task category
+          <input type="text" name="category" value="<%= task.category %>">
+          <input type="submit" value="Update Task">
+        </fieldset>
+      </form>
+
+    </section>
+  </main>
+</body>
+
+</html>

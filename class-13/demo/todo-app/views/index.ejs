@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('./layout/head.ejs') %>
+</head>
+
+<body>
+  <main>
+    <header>
+      <%- include('./layout/nav.ejs') %>
+    </header>
+    <section class="task-view container">
+      <!-- Display tasks here -->
+      <ul>
+        <% if (results.length) { %>
+          <% results.forEach(task=> { %>
+            <li>
+              <h4>
+                <%= task.title %>
+              </h4>
+              <p>
+                <%= task.contact %>
+              </p>
+              <p>
+                <%= task.status %>
+              </p>
+              <a href='/tasks/<%= task.id %>' target="_blank" rel="noopener noreferrer">View task details</a>
+              <form action="/task/delete/<%= task.id%>?_method=DELETE" method="POST">
+                <input type="hidden" value="<%= task.id %>">
+                <input type="submit" value="Delete task">
+              </form>
+            </li>
+            <% }); %>
+              <% } else { %>
+                <p>No data was found</p>
+                <% } %>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
