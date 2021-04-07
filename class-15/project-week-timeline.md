@@ -7,4 +7,4 @@
 |Day 3| [Day 3 Schedule]('topics/day-03-schedule.md')|
 |Day 4| [Day 4 Schedule]('topics/day-04-schedule.md')|
 |Day 5| [Day 5 Schedule]('topics/day-05-schedule.md')|
-|Day 5| Presentation Day!!|
+|Day 6| Presentation Day!!|
