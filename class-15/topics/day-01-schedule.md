@@ -1,6 +1,6 @@
 # Day one plan
 
-## - Pre-project Idea approval
+## Pre-project Idea approval
 
 - Electing a Project Leader.
 - Choosing a team name.
@@ -8,7 +8,7 @@
 - Copy This [trello board](https://trello.com/b/fdF3k5Dr/301-project-week-trello-board) , make it private, and add your teammates and  your lead instructor to it. (t.hamoudi@ltuc.com).
 - Get Approval from your Lead Instructor (Tamim) for an Idea.
 
-## - Post Project Idea approval
+## Post Project Idea approval
 
 - Draw a Wireframe for the the project site.
 
