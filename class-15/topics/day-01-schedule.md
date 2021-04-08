@@ -4,6 +4,7 @@
 
 - Electing a Project Leader.
 - Choosing a team name.
+- Create a slack channel for the team, make it private and add your instructor to it. 
 - Choosing 3 Main Ideas for the project.
 - Copy This [trello board](https://trello.com/b/fdF3k5Dr/301-project-week-trello-board) , make it private, and add your teammates and  your lead instructor to it. (t.hamoudi@ltuc.com).
 - Get Approval from your Lead Instructor (Tamim) for an Idea.
